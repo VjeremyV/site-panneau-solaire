@@ -1,0 +1,27 @@
+#map{
+    height: 500px;
+    width: 630px;
+}
+
+.fond{
+    height: 100vh;
+    background: url(../images/realisations/piscine_poseidon.webp) no-repeat fixed center/cover;
+}
+
+.fond > span {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    animation: up 2.5s ease;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(280px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
