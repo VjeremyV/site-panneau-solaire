@@ -22,7 +22,5 @@
     
     var marker4 = L.marker([43.58, 3.87],{alt: 'Ombrières du hangar', title :'Cliquez-moi!'}).addTo(map);
     marker4.bindPopup('<p>Les Ombrières du hangar : 30 bornes</p> <img src="./assets/images/realisations/hangar-map.webp" alt="ombrière du hangar">');
-
- 
 })()
   

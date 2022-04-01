@@ -1,7 +1,7 @@
 (() => {
     const form = document.querySelector('.form') //je selectionne ma div .form
     const formSubmit = document.querySelector('.formSubmit')
-    const radios = document.getElementsByName('interlocuteur')//je selectionne mes 3 input:radio
+    const radios = document.getElementsByName('interlocuteur')//je selectionne mes 2 input:radio
     const formEntrepriseEtCollectivite = ["Raison Sociale", "Nom", "Prénom", "Mail", "Rôle au sein de votre organisation", "Adresse", "Téléphone", "Description du projet", "Documents à télécharger", "Ville", "Code Postal"];
     const formContact = ["Nom", "Prénom", "Mail", "Téléphone", "Votre projet"]
     //j'établie 2 tableaux qui contiennent les Label des champs de mes 22 formulaires différents
@@ -282,9 +282,8 @@
                         case "Code Postal":
                             codeChecker(e.target.value, "Code Postal", "spCode");
                             break;
-
                         case "Téléphone":
-                            telChecker(e.target.value, "Téléphone", "spTel", tel);
+                            telChecker(e.target.value, "Téléphone", "spTel");
                             break;
                         case "Documents à télécharger":
                             docChecker(e.target.value, "Documents à télécharger", "spDoc");
